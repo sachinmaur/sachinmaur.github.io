@@ -1,107 +1,77 @@
-# 👋 Hi, I'm Sachin Maurya  
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?size=24&duration=3000&pause=800&color=0A66C2&center=true&vCenter=true&width=650&lines=Sachin+Maurya;MS+by+Research+%40+IIT+Dharwad;Machine+Learning+%7C+Computer+Vision;Multimodal+AI+%7C+Transformers" />
+</p>
 
-🎓 **MS by Research (CSE)**  
-🏛 **Indian Institute of Technology (IIT) Dharwad**  
-🤖 **Machine Learning | Computer Vision | Multimodal AI | Transformers**
+---
+
+## 👋 Hi, I'm Sachin Maurya  
+
+🎓 **MS by Research (CSE)** — *IIT Dharwad*  
+🤖 **Machine Learning | Computer Vision | Multimodal AI**
 
 ---
 
 ## 🌟 About Me  
 
-I am a **research-focused postgraduate student** at **IIT Dharwad**, working in the area of **Machine Learning and Deep Learning**, with a strong inclination towards **vision-based and multimodal systems**.
+I am a **research-oriented postgraduate student** at **Indian Institute of Technology Dharwad**, deeply interested in **understanding, designing, and improving deep learning architectures**.
 
-My academic journey is driven by a curiosity to **understand models beyond black-box behavior**, design **efficient architectures**, and bridge the gap between **theoretical foundations and real-world applications**.
+My focus is not just on using models, but on:
+- 🧠 **Why they work**
+- ⚙️ **Where they fail**
+- 🚀 **How to improve them**
 
-I enjoy:
-- 🔍 Deep-diving into **research papers**
-- 🧠 Designing **novel neural architectures**
-- ⚙️ Implementing models from scratch
-- ✍️ Explaining complex ideas with **intuition and clarity**
-
----
-
-## 🎯 Research Interests  
-
-- 📷 **Computer Vision**
-- 🧠 **Deep Learning Architectures**
-- 🔗 **Multimodal Learning (Audio–Visual–Text)**
-- 🔍 **Vision Transformers & Beyond**
-- ⚡ Efficient & Scalable Neural Networks
-- 📊 Representation Learning
+I enjoy implementing papers, debugging complex training issues, and explaining ideas with strong **intuition + mathematical grounding**.
 
 ---
 
-## 🛠️ Technical Skills  
+## 🔬 Research Interests  
 
-**Programming Languages**  
-- Python  
-- C / C++  
-- MATLAB  
+- Computer Vision & Representation Learning  
+- Vision Transformers & Hybrid Architectures  
+- Multimodal Learning (Audio–Visual–Text)  
+- Efficient Deep Learning Models  
 
-**Frameworks & Libraries**  
-- PyTorch  
-- NumPy, Pandas  
-- OpenCV  
-- Scikit-learn  
+---
 
-**Deep Learning Concepts**  
-- CNNs, Transformers, ViTs  
-- Attention Mechanisms  
-- Multimodal Fusion  
-- Model Optimization & Debugging  
+## 🛠️ Tech Stack  
 
-**Tools & Platforms**  
-- Git & GitHub  
-- Linux  
-- LaTeX  
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,pytorch,cpp,linux,git,github,latex" />
+</p>
 
 ---
 
 ## 📚 Academic Background  
 
-- 🎓 **MS by Research (Computer Science & Engineering)**  
-  *Indian Institute of Technology Dharwad*  
-
-- 🎓 **Bachelor of Technology (Computer Science & Engineering)**  
-  *Gurukula Kangri Deemed to be University, Haridwar*
-
+- 🎓 **MS by Research (CSE)** — IIT Dharwad  
+- 🎓 **B.Tech (CSE)** — Gurukula Kangri Deemed to be University  
 - 📝 **GATE 2024 Qualified**
 
 ---
 
-## 🧪 Current Work  
+## 🧪 Ongoing Work  
 
-- 🔬 Research on **advanced deep learning architectures**
-- 🧩 Working with **Vision Transformers and multimodal models**
-- 🛠️ Building **custom data pipelines** and training frameworks
-- 📄 Aiming towards **research publications**
-
----
-
-## 🌱 What I'm Learning Now  
-
-- 📐 Advanced optimization & stability in deep networks  
-- 🔗 Audio-Visual representation learning  
-- ⚙️ Efficient alternatives to standard Transformers  
+- 🔹 Vision & Multimodal Transformers  
+- 🔹 Architecture-level improvements over ViT-like models  
+- 🔹 Audio-Visual Learning Pipelines  
+- 🔹 Research paper implementation & analysis  
 
 ---
 
-## 📈 GitHub Goals  
+## 📊 GitHub Stats  
 
-- 📌 Share **clean & reproducible research code**
-- 📌 Document experiments with clarity
-- 📌 Build projects that reflect **depth, not just breadth**
-
----
-
-## 🤝 Let's Connect  
-
-- 💼 **LinkedIn**: *(Add your link here)*  
-- 📧 **Email**: *(Add your professional email)*  
-- 🌐 **Google Scholar**: *(If available)*  
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=default" />
+</p>
 
 ---
 
-> *"Research is not about knowing all answers, but about asking the right questions."*  
+## 🤝 Connect With Me  
 
-⭐ If you find my work useful, feel free to explore my repositories and connect!
+- 💼 LinkedIn: *(add link)*  
+- 📧 Email: *(add email)*  
+- 🌐 Google Scholar: *(optional)*  
+
+---
+
+> *"Good research simplifies complexity without losing depth."*
