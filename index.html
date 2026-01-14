@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sachin Maurya | Research Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+    }
+    header {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #020617, #1e293b);
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      background: linear-gradient(90deg, #38bdf8, #a78bfa, #f472b6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    header p {
+      margin-top: 20px;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #facc15;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #020617;
+      padding: 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      margin: 0 18px;
+      color: #e5e7eb;
+      text-decoration: none;
+      font-weight: 600;
+      position: relative;
+    }
+    nav a:hover {
+      color: #38bdf8;
+    }
+    section {
+      display: none;
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+    section.active {
+      display: block;
+    }
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      color: #38bdf8;
+    }
+    ul {
+      line-height: 1.8;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #020617;
+      color: #94a3b8;
+    }
+  </style>
+  <script>
+    function showTab(tabId) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(sec => sec.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+    }
+  </script>
+</head>
+<body>
+
+<header>
+  <h1>Sachin Maurya</h1>
+  <p>"न हि ज्ञानेन सदृशं पवित्रमिह विद्यते" <br/>— Mahabharata</p>
+  <p style="color:#e5e7eb; font-size:1.1rem;">MS by Research · IIT Dharwad · Machine Learning Researcher</p>
+</header>
+
+<nav>
+  <a href="#" onclick="showTab('about')">About</a>
+  <a href="#" onclick="showTab('research')">Research Interests</a>
+  <a href="#" onclick="showTab('projects')">Projects</a>
+  <a href="#" onclick="showTab('publications')">Publications</a>
+  <a href="#" onclick="showTab('skills')">Skills</a>
+  <a href="#" onclick="showTab('contact')">Contact</a>
+</nav>
+
+<section id="about" class="active">
+  <h2>About Me</h2>
+  <p>
+    I am an MS by Research student in the Department of Computer Science and Engineering at IIT Dharwad. My work focuses on understanding and improving deep learning architectures with strong theoretical grounding and practical relevance.
+  </p>
+</section>
+
+<section id="research">
+  <h2>Research Interests</h2>
+  <ul>
+    <li>Computer Vision & Representation Learning</li>
+    <li>Vision Transformers and Beyond</li>
+    <li>Multimodal Learning (Audio–Visual–Text)</li>
+    <li>Efficient & Scalable Deep Learning Models</li>
+  </ul>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <ul>
+    <li><b>Vision Transformer Analysis:</b> Studied attention behavior and computational trade-offs.</li>
+    <li><b>Audio-Visual Speaker Verification:</b> Multimodal fusion using spectrograms and frame sequences.</li>
+    <li><b>Custom Neural Architectures:</b> Designing alternatives to ViT and Mamba-like models.</li>
+  </ul>
+</section>
+
+<section id="publications">
+  <h2>Publications</h2>
+  <p>Manuscripts under preparation. Preprints and accepted papers will be listed here.</p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>Python, C/C++, MATLAB</li>
+    <li>PyTorch, NumPy, OpenCV</li>
+    <li>Deep Learning Architecture Design</li>
+    <li>Research Implementation & Debugging</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: your_email_here</p>
+  <p>GitHub: github.com/your_username</p>
+  <p>LinkedIn: your_linkedin_here</p>
+</section>
+
+<footer>
+  © 2026 Sachin Maurya · IIT Dharwad
+</footer>
+
+</body>
+</html>
