@@ -10,32 +10,47 @@
 # Font & Color Variables
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
-/* Fonts */
+/*--------------------------------------------------------------
+# Fonts (Refined & Academic)
+--------------------------------------------------------------*/
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Inter", system-ui, -apple-system, "Segoe UI",
+                  Roboto, "Helvetica Neue", Arial, sans-serif;
+  --heading-font: "Poppins", "Raleway", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: white; /* Background color for the entire website, including individual sections */
-  --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #050d18; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #149ddd; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+/*--------------------------------------------------------------
+# Global Color Scheme (Elegant & Professional)
+--------------------------------------------------------------*/
+:root {
+  --background-color: #f8f9fb;     /* Soft off-white background */
+  --default-color: #2b2d42;        /* Charcoal blue-gray for text */
+  --heading-color: #0b1c2d;        /* Deep navy for headings */
+  --accent-color: #2a9d8f;         /* Muted teal (research-friendly) */
+  --surface-color: #ffffff;        /* Card / section background */
+  --contrast-color: #ffffff;       /* Text on accent backgrounds */
 }
 
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+/*--------------------------------------------------------------
+# Navigation Menu Colors (Clean & Focused)
+--------------------------------------------------------------*/
 :root {
-  --nav-color: #a8a9b4;  /* The default color of the main  links */
-  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #040b14; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #040b14; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #a8a9b4; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #ffffff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #c7c9d3;                   /* Softer gray for nav text */
+  --nav-hover-color: #ffffff;             /* Clear hover/active state */
+  --nav-mobile-background-color: #0b1c2d; /* Deep navy (matches headings) */
+  --nav-dropdown-background-color: #0b1c2d;
+  --nav-dropdown-color: #c7c9d3;
+  --nav-dropdown-hover-color: #2a9d8f;    /* Accent highlight on hover */
 }
+
+
+:root {
+  --accent-color: #2a9d8f;   /* Muted teal */
+  --accent-hover: #e9c46a;   /* Warm amber */
+  --dark-overlay: rgba(13, 27, 42, 0.75); /* Blue-dark overlay */
+}
+
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
@@ -1044,11 +1059,12 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Portfolio Section
+# Portfolio Section (Enhanced Colors)
 --------------------------------------------------------------*/
+
 .portfolio .portfolio-filters {
   padding: 0;
-  margin: 0 auto 20px auto;
+  margin: 0 auto 25px auto;
   list-style: none;
   text-align: center;
 }
@@ -1056,105 +1072,110 @@ section,
 .portfolio .portfolio-filters li {
   cursor: pointer;
   display: inline-block;
-  padding: 0;
   font-size: 14px;
-  font-weight: 400;
-  margin: 0 10px;
+  font-weight: 500;
+  margin: 0 12px;
   line-height: 1;
   text-transform: uppercase;
   margin-bottom: 10px;
+  color: #1d3557; /* Deep navy */
   transition: all 0.3s ease-in-out;
 }
 
 .portfolio .portfolio-filters li:hover,
 .portfolio .portfolio-filters li.filter-active {
   color: var(--accent-color);
-}
-
-.portfolio .portfolio-filters li:first-child {
-  margin-left: 0;
-}
-
-.portfolio .portfolio-filters li:last-child {
-  margin-right: 0;
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 4px;
 }
 
 @media (max-width: 575px) {
   .portfolio .portfolio-filters li {
-    font-size: 14px;
-    margin: 0 5px;
+    font-size: 13px;
+    margin: 0 6px;
   }
 }
 
+/* Portfolio Item */
 .portfolio .portfolio-content {
   position: relative;
   overflow: hidden;
+  border-radius: 12px;
 }
 
 .portfolio .portfolio-content img {
-  transition: 0.3s;
+  transition: transform 0.4s ease;
 }
 
+/* Overlay */
 .portfolio .portfolio-content .portfolio-info {
   opacity: 0;
   position: absolute;
   inset: 0;
   z-index: 3;
-  transition: all ease-in-out 0.3s;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 15px;
+  transition: all 0.35s ease-in-out;
+  background: var(--dark-overlay);
+  padding: 18px;
 }
 
+/* Title Badge */
 .portfolio .portfolio-content .portfolio-info h4 {
   font-size: 14px;
-  padding: 5px 10px;
-  font-weight: 400;
+  padding: 6px 12px;
+  font-weight: 500;
   color: #ffffff;
   display: inline-block;
   background-color: var(--accent-color);
+  border-radius: 20px;
 }
 
+/* Description */
 .portfolio .portfolio-content .portfolio-info p {
   position: absolute;
-  bottom: 10px;
-  text-align: center;
-  display: inline-block;
+  bottom: 14px;
   left: 0;
   right: 0;
-  font-size: 16px;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
 }
 
+/* Icons */
 .portfolio .portfolio-content .portfolio-info .preview-link,
 .portfolio .portfolio-content .portfolio-info .details-link {
   position: absolute;
-  left: calc(50% - 40px);
+  top: 50%;
   font-size: 26px;
-  top: calc(50% - 14px);
-  color: #fff;
-  transition: 0.3s;
-  line-height: 1.2;
+  color: #ffffff;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
 }
 
-.portfolio .portfolio-content .portfolio-info .preview-link:hover,
-.portfolio .portfolio-content .portfolio-info .details-link:hover {
-  color: var(--accent-color);
+.portfolio .portfolio-content .portfolio-info .preview-link {
+  left: calc(50% - 45px);
 }
 
 .portfolio .portfolio-content .portfolio-info .details-link {
   left: 50%;
-  font-size: 34px;
-  line-height: 0;
+  font-size: 32px;
 }
 
+.portfolio .portfolio-content .portfolio-info .preview-link:hover,
+.portfolio .portfolio-content .portfolio-info .details-link:hover {
+  color: var(--accent-hover);
+  transform: translateY(-50%) scale(1.15);
+}
+
+/* Hover Effects */
 .portfolio .portfolio-content:hover .portfolio-info {
   opacity: 1;
 }
 
 .portfolio .portfolio-content:hover img {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
+
 
 /*--------------------------------------------------------------
 # Services Section
