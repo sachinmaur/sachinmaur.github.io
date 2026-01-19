@@ -407,45 +407,81 @@
 
   <!-- Project Title & Duration -->
   <h3 style="margin-bottom: 6px; color: #1d3557;">
-    Multi-Stage Deep Learning Model for Astroseismic Parameter Prediction
+    Enhanced Skip Fusion Vision Mamba-Net
   </h3>
   <p style="margin: 0; font-size: 14px; color: #555;">
-    <b>Duration:</b> September 2024 – January 2025
+    <b>Duration:</b> March 2025 -- July 2025}
   </p>
-
+  
+  <!-- Team Members -->
+  <p style="margin-top: 8px; font-size: 14px;">
+    <b>Team Members:</b> Abhishek Sharma, Sachin Maurya
+  </p>
+  
   <!-- Project Description -->
   <ul style="margin-top: 10px; padding-left: 20px; line-height: 1.6;">
     <li>
-      Developed a <b>multi-stage deep learning framework</b> for predicting stellar seismic parameters
-      <b>(Δν)</b> and <b>(ΔΠ)</b> from synthetic stellar power spectra, addressing complex non-linear
-      relationships in astroseismology data.
+      Designed <b>ESF-Net</b>, an improved VMUNet variant with a novel <b>Enhanced Skip Fusion (ESF)</b> 
+      block for robust semantic segmentation in dense urban environments.
     </li>
     <li>
-      Designed a hybrid architecture combining <b>1D CNN</b> for spectral feature extraction,
-      <b>GRU</b> for modeling long-range temporal dependencies, and a
-      <b>Transformer Encoder</b> for enhanced temporal contextualization.
+Integrated <b>dual-path attention </b> (ASPP + Inverted External Attention) to emphasize class-relevant spatial features while preserving structural detail, 
+      achieving a lightweight yet accurate model.
     </li>
     <li>
-      Applied <b>dropout</b> and <b>L2 regularization</b> to mitigate overfitting; optimized the model
-      using the <b>Adam optimizer</b> with <b>Mean Squared Error (MSE)</b> loss.
+Introduced a <b>composite loss function</b> (Dice, Focal Tversky, Lovasz-Softmax) with learnable dynamic weights for adaptive optimization.
     </li>
     <li>
-      Performed comprehensive data preprocessing, including <b>outlier removal (IQR)</b> and
-      <b>Principal Component Analysis (PCA)</b>, to improve training stability and generalization.
-    </li>
-    <li>
-      Achieved high prediction accuracy with strong generalization performance; validated results
-      through <b>training/validation loss curves</b> and <b>actual vs. predicted</b> visualizations.
+      Outperformed state-of-the-art CNN, Transformer, and state-space models on the <b>Cityscapes dataset</b>, delivering sharper boundaries,
+      higher per-class accuracy, and stronger generalization.
     </li>
   </ul>
 
   <!-- Tools -->
   <p style="margin-top: 10px; font-size: 14px;">
-    <b>Tools & Technologies:</b> Python, PyTorch, Matplotlib, Seaborn
+    <b>Tools & Technologies:</b> Python, PyTorch, CUDA
+  </p>
+
+</div>
+        
+<div class="project-card" style="margin-top: 24px; padding: 18px; border-left: 4px solid #6a4c93; background: #f8f9fa; border-radius: 6px;">
+
+  <!-- Project Title & Duration -->
+  <h3 style="margin-bottom: 6px; color: #1d3557;">
+    Brain Tumor Segmentation using Deep Learning
+  </h3>
+  <p style="margin: 0; font-size: 14px; color: #555;">
+    <b>Duration:</b> April 2025 -- June 2025
+  </p>
+  
+  <!-- Team Members -->
+  <p style="margin-top: 8px; font-size: 14px;">
+    <b>Team Members:</b> Abhishek Sharma, Sachin Maurya
+  </p>
+  
+  <!-- Project Description -->
+  <ul style="margin-top: 10px; padding-left: 20px; line-height: 1.6;">
+    <li>
+      Implemented a 2D <b>U-Net</b> with skip connections; preprocessing included resizing MRI slices, handling class imbalance, and custom data generators for efficient training.
+    </li>
+    <li>
+      
+Optimized with <b>Adam<b> and Dice loss; post-processing with argmax decoding reduced false positives, improving tumor boundary accuracy.
+    </li>
+    </li>
+  Achieved <b>99.35\% test accuracy</b>, <b>Dice coefficient 0.60</b>, and <b>specificity 99.79\%</b> on the <b>BraTS2020 dataset</b>, demonstrating robustness and clinical relevance.
+    <li>
+  
+  </ul>
+
+  <!-- Tools -->
+  <p style="margin-top: 10px; font-size: 14px;">
+    <b>Tools & Technologies:</b> Python, TensorFlow/Keras, NumPy, Pandas, Matplotlib
   </p>
 
 </div>
 
+        
 <div class="project-card" style="margin-top: 24px; padding: 18px; border-left: 4px solid #e76f51; background: #f8f9fa; border-radius: 6px;">
 
   <!-- Project Title & Duration -->
@@ -459,19 +495,19 @@
   <!-- Project Description -->
   <ul style="margin-top: 10px; padding-left: 20px; line-height: 1.6;">
     <li>
-      Developed a machine learning-based crop advisory system to assist farmers in selecting 
+      Developed a <b>machine learning-based crop advisory system</b> to assist farmers in selecting 
       optimal crops by analyzing soil nutrients, weather, and environmental conditions for 
       improved yield and profitability.
     </li>
     <li>
-      Collected and preprocessed soil and climate data (N, P, K, pH, temperature, humidity, rainfall); 
+      Collected and preprocessed soil and climate data <b>(N, P, K, pH, temperature, humidity, rainfall)</b>; 
       performed normalization, missing value imputation, and outlier removal to enhance data quality
     </li>
     <li>
-      Implemented and compared multiple models Decision Tree, Random Forest, SVM, Gradient Boosting, and Gaussian Naive Bayes; identified GaussianNB as the best-performing classifier.
+      Implemented and compared multiple models <b>Decision Tree, Random Forest, SVM, Gradient Boosting</b>, and <b>Gaussian Naive Bayes<\b>; identified <b>GaussianNB</b> as the best-performing classifier.
     </li>
     <li>
-      Achieved 93.26\% training accuracy and 92.53\% validation accuracy, demonstrating consistent model generalization and robustness.
+      Achieved <b>93.26\% training accuracy</b> and <b>92.53\% validation accuracy</b>, demonstrating consistent model generalization and robustness.
     </li>
   </ul>
 
