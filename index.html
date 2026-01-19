@@ -1,153 +1,768 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sachin Maurya | Research Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #0f172a;
-      color: #e5e7eb;
-    }
-    header {
-      padding: 60px 20px;
-      text-align: center;
-      background: linear-gradient(135deg, #020617, #1e293b);
-    }
-    header h1 {
-      font-size: 3rem;
-      font-weight: 800;
-      background: linear-gradient(90deg, #38bdf8, #a78bfa, #f472b6);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    header p {
-      margin-top: 20px;
-      font-size: 1.4rem;
-      font-weight: 600;
-      color: #facc15;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      background: #020617;
-      padding: 12px 0;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-    nav a {
-      margin: 0 18px;
-      color: #e5e7eb;
-      text-decoration: none;
-      font-weight: 600;
-      position: relative;
-    }
-    nav a:hover {
-      color: #38bdf8;
-    }
-    section {
-      display: none;
-      max-width: 900px;
-      margin: auto;
-      padding: 60px 20px;
-    }
-    section.active {
-      display: block;
-    }
-    h2 {
-      font-size: 2.2rem;
-      margin-bottom: 20px;
-      color: #38bdf8;
-    }
-    ul {
-      line-height: 1.8;
-    }
-    footer {
-      text-align: center;
-      padding: 30px;
-      background: #020617;
-      color: #94a3b8;
-    }
-  </style>
-  <script>
-    function showTab(tabId) {
-      const sections = document.querySelectorAll('section');
-      sections.forEach(sec => sec.classList.remove('active'));
-      document.getElementById(tabId).classList.add('active');
-    }
-  </script>
+  <meta charset="utf-8">
+ 
+  <title>Abhishek Sharma</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+ 
 </head>
-<body>
 
-<header>
-  <h1>Sachin Maurya</h1>
-  <p>"न हि ज्ञानेन सदृशं पवित्रमिह विद्यते" <br/>— Mahabharata</p>
-  <p style="color:#e5e7eb; font-size:1.1rem;">MS by Research · IIT Dharwad · Machine Learning Researcher</p>
-</header>
+<body class="index-page">
 
-<nav>
-  <a href="#" onclick="showTab('about')">About</a>
-  <a href="#" onclick="showTab('research')">Research Interests</a>
-  <a href="#" onclick="showTab('projects')">Projects</a>
-  <a href="#" onclick="showTab('publications')">Publications</a>
-  <a href="#" onclick="showTab('skills')">Skills</a>
-  <a href="#" onclick="showTab('contact')">Contact</a>
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+  <!--<div class="profile-img">
+      <img src="assets/img/AbhishekS.jpeg" alt="" class="img-fluid"  width="100" 
+     height="100">
+    </div>-->
+    
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> 
+      <h1 class="sitename"><font color="white">Abhishek Sharma</font></h1>-->
+    </a>
+
+
+  <nav id="navmenu" class="navmenu">
+  <ul class="nav-tabs-custom">
+
+    <li>
+      <a href="#about" class="nav-link-custom">
+        <i class="bi bi-person-circle"></i>
+        <span>About</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="#Areas" class="nav-link-custom">
+        <i class="bi bi-lightbulb"></i>
+        <span>Research Interests</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="#resume" class="nav-link-custom">
+        <i class="bi bi-journal-text"></i>
+        <span>Publications</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="#Projects" class="nav-link-custom">
+        <i class="bi bi-kanban"></i>
+        <span>Projects</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="#experience" class="nav-link-custom">
+        <i class="bi bi-briefcase"></i>
+        <span>Work Experience</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="#Achievements" class="nav-link-custom">
+        <i class="bi bi-award"></i>
+        <span>Achievements</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="#references" class="nav-link-custom">
+        <i class="bi bi-award"></i>
+        <span>Academic References</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="#Resume" class="nav-link-custom">
+        <i class="bi bi-award"></i>
+        <span>Resume</span>
+      </a>
+    </li>
+  </ul>
 </nav>
 
-<section id="about" class="active">
-  <h2>About Me</h2>
-  <p>
-    I am an MS by Research student in the Department of Computer Science and Engineering at IIT Dharwad. My work focuses on understanding and improving deep learning architectures with strong theoretical grounding and practical relevance.
+
+  </header>
+
+  <main class="main">
+
+
+    <!-- About Section -->
+  <section id="about" class="about section">
+
+  <!-- Quote -->
+  <div class="container section-title" data-aos="fade-up">
+    <blockquote class="sanskrit-quote">
+      “निश्चयं बुद्धिर् वीर्यं न भयम् हनुमत् समम्।
+      विद्या विनययुक्तस्य जयः सदा सुनिश्चितः॥”
+    </blockquote>
+
+    <hr class="quote-divider">
+
+    <h2>About Me</h2>
+
+    <p class="about-intro">
+      <b>नमस्कार!</b> I am <b>अभिषेक शर्मा (Abhishek Sharma)</b>, originally from
+      <b>Gorakhpur, Uttar Pradesh, India</b>. I am currently pursuing a
+      <b>Master’s degree (MS by Research)</b> in the
+      <b>Department of Computer Science & Engineering (संगणक विज्ञान एवं अभियांत्रिकी विभाग)</b>
+      at the <b>Indian Institute of Technology Dharwad (IIT-Dh)</b>,
+      Karnataka, India.
+    </p>
+  </div>
+
+  <!-- Content -->
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <h3 class="section-subtitle">Academic Details</h3>
+
+        <ul class="about-list">
+          <li>
+            <i class="bi bi-mortarboard-fill"></i>
+            <strong>Degree:</strong>
+            MS (by Research), Computer Science & Engineering, IIT Dharwad
+          </li>
+
+          <li>
+            <i class="bi bi-building"></i>
+            <strong>Laboratory:</strong>
+            Applied AI/ML Lab, A1-509, Academic Block-1, IIT Dharwad
+          </li>
+
+          <li>
+            <i class="bi bi-envelope-fill"></i>
+            <strong>Email:</strong>
+            abhishek.omkrs@gmail.com
+          </li>
+
+          <li>
+            <i class="bi bi-telephone-fill"></i>
+            <strong>Contact:</strong>
+            +91-7715904351
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+ <hr>   
+
+
+ <section id="Areas" class="services section">
+
+<!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Research Interests</h2>
+    <p style="max-width: 720px; margin: auto; color: #555;">
+      My research focuses on developing efficient, interpretable, and scalable deep learning
+      models across vision, multimodal, and temporal domains.
+    </p>
+  </div>
+
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- Card 1 -->
+      <div class="col-lg-6 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+        <div class="interest-card">
+          <div class="interest-icon bg-primary">
+            <i class="bi bi-cpu"></i>
+          </div>
+          <h4>Designing Deep Architectures</h4>
+          <p>Building robust and scalable neural architectures for perceptual understanding.</p>
+          <div class="badges">
+            <span>Image Classification</span>
+            <span>Medical Image Segmentation</span>
+            <span>Video Analysis</span>
+            <span>Audio Processing</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-6 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+        <div class="interest-card">
+          <div class="interest-icon bg-success">
+            <i class="bi bi-layers"></i>
+          </div>
+          <h4>Deep Model Compression</h4>
+          <p>Improving efficiency and deployability of deep models.</p>
+          <div class="badges">
+            <span>Knowledge Distillation</span>
+            <span>Dataset Distillation</span>
+            <span>Parameter Efficiency</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-6 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+        <div class="interest-card">
+          <div class="interest-icon bg-warning">
+            <i class="bi bi-intersect"></i>
+          </div>
+          <h4>Multi-Modal Learning</h4>
+          <p>Learning joint representations across multiple sensory modalities.</p>
+          <div class="badges">
+            <span>LLM</span>
+            <span>VLM</span>
+            <span>AVSC</span>
+            <span>AVSE</span>
+            <span>AVEL</span>
+            <span>AVQA</span>
+            <span>AQA</span>
+            <span>VQA</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-lg-6 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+        <div class="interest-card">
+          <div class="interest-icon bg-danger">
+            <i class="bi bi-graph-up"></i>
+          </div>
+          <h4>Time-Series Modeling</h4>
+          <p>Modeling long-range dependencies in sequential and temporal data.</p>
+          <div class="badges">
+            <span>Forecasting</span>
+            <span>Classification</span>
+            <span>Anomaly Detection</span>
+            <span>Imputation</span>
+            <span>Medical Time-Series</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+    </section><!-- /Services Section -->
+
+<hr>
+
+    </section><!-- /Skills Section -->
+<hr>
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        
+        <h2>Publications<br></h2><hr>       
+<h3><font color="red"><b>Refereed Conference</b></font><br></h3><hr>
+<ol>
+<li>
+  Sachin Maurya, Abhishek Sharma, Achyut Mani Tripathi, Kedar Khandeparkar.
+  "<b>A Lightweight Multi-Scale Model for Fine-Grained Medical Image Segmentation</b>."
+  <i>International Conference on Acoustics, Speech, and Signal Processing (ICASSP) 2026</i>,
+  July–September 2025.
+  <span style="color: blue;">[Accepted]</span>
+<font color="red">[Core Rank=A*] </font></li><hr>
+
+</ol>
+  
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+<hr>
+
+
+
+
+
+    <!-- Services Section -->
+    <section id="Projects" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Projects</h2>
+<div class="project-card" style="margin-top: 20px; padding: 18px; border-left: 4px solid #457b9d; background: #f8f9fa; border-radius: 6px;">
+
+  <!-- Project Title & Duration -->
+  <h3 style="margin-bottom: 6px; color: #1d3557;">
+    Enhanced Spatial Feature Selective Vision State Space Model
+  </h3>
+  <p style="margin: 0; font-size: 14px; color: #555;">
+    <b>Duration:</b> Jan 2025 – May 2025
   </p>
-</section>
 
-<section id="research">
-  <h2>Research Interests</h2>
-  <ul>
-    <li>Computer Vision & Representation Learning</li>
-    <li>Vision Transformers and Beyond</li>
-    <li>Multimodal Learning (Audio–Visual–Text)</li>
-    <li>Efficient & Scalable Deep Learning Models</li>
+  <!-- Team Members -->
+  <p style="margin-top: 8px; font-size: 14px;">
+    <b>Team Members:</b> Abhishek Sharma, Sachin Maurya
+  </p>
+
+  <!-- Project Description -->
+  <ul style="margin-top: 10px; padding-left: 20px; line-height: 1.6;">
+    <li>
+      Developed <b>EFSVMNet</b>, an enhanced <b>VM-UNet</b> variant incorporating a lightweight
+      <b>Spatial Feature Selective (SFS)</b> module to reduce feature redundancy and mitigate overfitting
+      in medical image segmentation tasks.
+    </li>
+    <li>
+      Proposed a <b>feature importance mask</b> and a novel <b>spatial feature selective loss</b>,
+      enabling adaptive suppression of uninformative regions and robust end-to-end optimization.
+    </li>
+    <li>
+      Achieved superior or competitive performance against state-of-the-art
+      <b>CNN, Transformer, and State-Space</b> models across six benchmark datasets:
+      <i>ISIC 2017/2018, Kvasir-SEG, CVC-ClinicDB, CVC-ColonDB, ETIS</i>.
+    </li>
+    <li>
+      Improved <b>Dice</b>, <b>IoU</b>, and boundary accuracy; extensive ablation studies validated
+      the effectiveness and generalization capability of the SFS module across heterogeneous
+      medical imaging datasets.
+    </li>
   </ul>
-</section>
 
-<section id="projects">
-  <h2>Projects</h2>
-  <ul>
-    <li><b>Vision Transformer Analysis:</b> Studied attention behavior and computational trade-offs.</li>
-    <li><b>Audio-Visual Speaker Verification:</b> Multimodal fusion using spectrograms and frame sequences.</li>
-    <li><b>Custom Neural Architectures:</b> Designing alternatives to ViT and Mamba-like models.</li>
+  <!-- Tools -->
+  <p style="margin-top: 10px; font-size: 14px;">
+    <b>Tools & Technologies:</b> Python, PyTorch, CUDA
+  </p>
+
+</div>
+<div class="project-card" style="margin-top: 24px; padding: 18px; border-left: 4px solid #2a9d8f; background: #f8f9fa; border-radius: 6px;">
+
+  <!-- Project Title & Duration -->
+  <h3 style="margin-bottom: 6px; color: #1d3557;">
+    A Vision–Language Hybrid Framework for Automated Radiology Report Generation
+  </h3>
+  <p style="margin: 0; font-size: 14px; color: #555;">
+    <b>Duration:</b> July 2025 – September 2025
+  </p>
+
+  <!-- Team Members -->
+  <p style="margin-top: 8px; font-size: 14px;">
+    <b>Team Members:</b> Abhishek Sharma, Sachin Maurya
+  </p>
+
+  <!-- Project Description -->
+  <ul style="margin-top: 10px; padding-left: 20px; line-height: 1.6;">
+    <li>
+      Designed a <b>generalized vision–language hybrid framework</b> for automated radiology report generation,
+      integrating pretrained <b>state-space models</b> for image feature extraction with a
+      <b>Transformer-based decoder</b> augmented by an expert mechanism for clinical text synthesis.
+    </li>
+    <li>
+      Addressed the <b>computational inefficiency</b> of conventional Transformer decoders by proposing a
+      <b>lightweight, parameter-efficient architecture</b> with significantly reduced FLOPs and faster inference.
+    </li>
+    <li>
+      Combined <b>dual pretrained visual encoders</b> (<i>ResNet-101</i> and <i>AdaMamba</i>) with an
+      <b>MLP-Mixer encoder</b> to effectively capture both global semantics and local visual context,
+      improving multimodal representation learning.
+    </li>
+    <li>
+      Outperformed <b>R2Gen</b> baselines on the <b>IU X-ray dataset</b>, achieving notable improvements in
+      <b>BLEU-1 (0.505)</b>, <b>ROUGE-L (0.383)</b>, and <b>METEOR (0.190)</b>.
+    </li>
   </ul>
-</section>
 
-<section id="publications">
-  <h2>Publications</h2>
-  <p>Manuscripts under preparation. Preprints and accepted papers will be listed here.</p>
-</section>
+  <!-- Tools -->
+  <p style="margin-top: 10px; font-size: 14px;">
+    <b>Tools & Technologies:</b> Python, PyTorch, CUDA, Transformers, Vision–Language Models
+  </p>
 
-<section id="skills">
-  <h2>Skills</h2>
-  <ul>
-    <li>Python, C/C++, MATLAB</li>
-    <li>PyTorch, NumPy, OpenCV</li>
-    <li>Deep Learning Architecture Design</li>
-    <li>Research Implementation & Debugging</li>
+</div>
+
+<div class="project-card" style="margin-top: 24px; padding: 18px; border-left: 4px solid #6a4c93; background: #f8f9fa; border-radius: 6px;">
+
+  <!-- Project Title & Duration -->
+  <h3 style="margin-bottom: 6px; color: #1d3557;">
+    Multi-Stage Deep Learning Model for Astroseismic Parameter Prediction
+  </h3>
+  <p style="margin: 0; font-size: 14px; color: #555;">
+    <b>Duration:</b> September 2024 – January 2025
+  </p>
+
+  <!-- Project Description -->
+  <ul style="margin-top: 10px; padding-left: 20px; line-height: 1.6;">
+    <li>
+      Developed a <b>multi-stage deep learning framework</b> for predicting stellar seismic parameters
+      <b>(Δν)</b> and <b>(ΔΠ)</b> from synthetic stellar power spectra, addressing complex non-linear
+      relationships in astroseismology data.
+    </li>
+    <li>
+      Designed a hybrid architecture combining <b>1D CNN</b> for spectral feature extraction,
+      <b>GRU</b> for modeling long-range temporal dependencies, and a
+      <b>Transformer Encoder</b> for enhanced temporal contextualization.
+    </li>
+    <li>
+      Applied <b>dropout</b> and <b>L2 regularization</b> to mitigate overfitting; optimized the model
+      using the <b>Adam optimizer</b> with <b>Mean Squared Error (MSE)</b> loss.
+    </li>
+    <li>
+      Performed comprehensive data preprocessing, including <b>outlier removal (IQR)</b> and
+      <b>Principal Component Analysis (PCA)</b>, to improve training stability and generalization.
+    </li>
+    <li>
+      Achieved high prediction accuracy with strong generalization performance; validated results
+      through <b>training/validation loss curves</b> and <b>actual vs. predicted</b> visualizations.
+    </li>
   </ul>
-</section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: your_email_here</p>
-  <p>GitHub: github.com/your_username</p>
-  <p>LinkedIn: your_linkedin_here</p>
-</section>
+  <!-- Tools -->
+  <p style="margin-top: 10px; font-size: 14px;">
+    <b>Tools & Technologies:</b> Python, PyTorch, Matplotlib, Seaborn
+  </p>
 
-<footer>
-  © 2026 Sachin Maurya · IIT Dharwad
-</footer>
+</div>
+
+<div class="project-card" style="margin-top: 24px; padding: 18px; border-left: 4px solid #e76f51; background: #f8f9fa; border-radius: 6px;">
+
+  <!-- Project Title & Duration -->
+  <h3 style="margin-bottom: 6px; color: #1d3557;">
+    Apparel Recommendation System
+  </h3>
+  <p style="margin: 0; font-size: 14px; color: #555;">
+    <b>Duration:</b> September 2022 – January 2023
+  </p>
+
+  <!-- Project Description -->
+  <ul style="margin-top: 10px; padding-left: 20px; line-height: 1.6;">
+    <li>
+      Developed an <b>intelligent apparel recommendation system</b> leveraging both
+      <b>textual descriptions</b> and <b>visual features</b> to enhance user experience
+      and product discovery in e-commerce platforms.
+    </li>
+    <li>
+      Implemented <b>collaborative filtering</b> to model user behavior and preferences,
+      <b>NLP-based preprocessing</b> for semantic similarity between product descriptions,
+      and <b>deep learning models</b> for image-based visual similarity detection.
+    </li>
+    <li>
+      Designed robust data preprocessing pipelines to handle <b>missing values</b>,
+      <b>noise</b>, and <b>inconsistencies</b>, ensuring stable training and reliable recommendations.
+    </li>
+    <li>
+      Delivered accurate and relevant recommendations, leading to improved
+      <b>user engagement</b> and <b>customer satisfaction</b> in simulated e-commerce settings.
+    </li>
+  </ul>
+
+  <!-- Tools -->
+  <p style="margin-top: 10px; font-size: 14px;">
+    <b>Tools & Technologies:</b> Python, TensorFlow/Keras, Pandas, NumPy, NLP Libraries
+  </p>
+
+</div>
+   
+    </div><!-- End Section Title -->
+  </div>
+ </div>
+
+<section id="experience" class="experience section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Work Experience</h2>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+
+        <!-- EXPERIENCE 1 -->
+        <div class="experience-card" data-aos="fade-up">
+
+          <div class="exp-header">
+            <h3>boAt Lifestyle — Research & Development</h3>
+            <span>September 2022 – July 2023</span>
+          </div>
+
+          <p class="exp-role">
+            Consultant – Embedded Software Engineer
+          </p>
+
+          <!-- Dropdown -->
+          <details class="exp-dropdown">
+            <summary>
+              <i class="bi bi-chevron-down"></i>
+              Roles & Responsibilities
+            </summary>
+
+            <ul class="exp-list">
+              <li>Developed <b>efficient embedded software</b> using <b>C/C++</b> for hearable and IoT devices.</li>
+              <li>Designed <b>Python-based automation and testing frameworks</b> to improve development efficiency.</li>
+              <li>Maintained <b>BLE and Wi-Fi stacks</b> ensuring reliable wireless communication.</li>
+              <li>Collaborated with <b>hardware, firmware, and QA teams</b> across the product lifecycle.</li>
+              <li>Worked on <b>TWS earbuds, neckbands</b>, and consumer IoT platforms.</li>
+              <li>Debugged <b>system-level and protocol issues</b> to ensure production stability.</li>
+            </ul>
+          </details>
+
+        </div>
+
+        <!-- EXPERIENCE 2 -->
+        <div class="experience-card" data-aos="fade-up" data-aos-delay="150">
+
+          <div class="exp-header">
+            <h3>Cobottica Automation Pvt. Ltd. — Mumbai, Maharashtra</h3>
+            <span>July 2021 – October 2021</span>
+          </div>
+
+          <p class="exp-role">
+            Robotics Engineer Trainee
+          </p>
+
+          <!-- Dropdown -->
+          <details class="exp-dropdown">
+            <summary>
+              <i class="bi bi-chevron-down"></i>
+              Roles & Responsibilities
+            </summary>
+
+            <ul class="exp-list">
+              <li>Developed <b>robot control and automation software</b> using <b>Python and ROS</b>.</li>
+              <li>Integrated <b>hardware components</b> with robotic software pipelines.</li>
+              <li>Used <b>RViz, rqt, and rosbag</b> for navigation, tuning, and system analysis.</li>
+              <li>Supported testing and deployment using ROS-based workflows.</li>
+              <li>Ensured <b>robust performance</b> in real-world robotic applications.</li>
+            </ul>
+          </details>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section><!-- /Portfolio Section -->
+  <hr>
+
+<section id="Resume" class="resume section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Resume</h2>
+    <p style="max-width: 700px; margin: auto; color: #555;">
+      You can view or download my latest academic resume by clicking the button below.
+    </p>
+  </div>
+
+  <!-- Resume Download Card -->
+  <div class="container" data-aos="zoom-in" data-aos-delay="150">
+    <div class="resume-card">
+
+      <i class="bi bi-file-earmark-person-fill"></i>
+
+      <h3>Academic Resume / CV</h3>
+      <p>
+        Includes education, research experience, publications, projects, and technical skills.
+      </p>
+
+      <!-- Resume Button -->
+      <a href="assets/Abhishek_Sharma_Resume1.pdf"
+         class="resume-btn"
+         target="_blank"
+         download>
+        <i class="bi bi-download"></i> View / Download Resume
+      </a>
+
+    </div>
+  </div>
+
+</section>
+   
+<section id="references" class="references section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Academic References</h2>
+    <p>Institute Supervisors & Academic Referees</p>
+  </div>
+
+  <div class="container">
+
+    <!-- Reference 1 -->
+    <div class="ref-card" data-aos="fade-up">
+      <div class="ref-photo">
+        <img src="assets/Achyut2.jpg" alt="Dr. Achyut Mani Tripathi">
+      </div>
+
+      <div class="ref-details">
+        <h3>
+          <a href="https://achyutmani.github.io/" target="_blank" class="ref-link">
+            Dr. Achyut Mani Tripathi
+          </a>
+        </h3>
+        <p class="ref-designation">
+          Assistant Professor, Department of Computer Science & Engineering  
+          <br>Indian Institute of Technology Dharwad, Karnataka
+        </p>
+
+        <hr>
+
+        <p><b>Academic Qualification</b></p>
+        <p>Ph.D., Department of Computer Science & Engineering  
+           <br>Indian Institute of Technology Guwahati, Assam, India</p>
+
+        <p><b>Research Areas</b></p>
+        <p class="ref-research">
+          Deep Learning for Sound Classification, Adversarial Attacks, Knowledge Distillation,
+          Multi-modal Learning, Audio-Visual Question Answering, Audio-Visual Scene Classification
+        </p>
+
+        <p><b>Contact Information</b></p>
+        <ul class="ref-contact">
+          <li><i class="bi bi-envelope"></i> t.achyut@iitdh.ac.in</li>
+          <li><i class="bi bi-geo-alt"></i> Office: A1-129, Academic Block-1, IIT Dharwad</li>
+          <li><i class="bi bi-telephone"></i> Landline: 1084 (Inside), 0836-2309730 (Outside)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Reference 2 -->
+    <div class="ref-card" data-aos="fade-up" data-aos-delay="150">
+      <div class="ref-photo">
+        <img src="assets/kedar2 - Kedar Vithal Khandeparkar.jpeg" alt="Dr. Kedar Khandeparkar">
+      </div>
+
+      <div class="ref-details">
+        <h3>          
+          <a href="https://iitdh.ac.in/~kedark/" target="_blank" class="ref-link">
+            Dr. Kedar Khandeparkar
+          </a>
+        </h3>
+        <p class="ref-designation">
+          Assistant Professor, Department of Computer Science & Engineering  
+          <br>Indian Institute of Technology Dharwad, Karnataka
+        </p>
+
+        <hr>
+
+        <p><b>Academic Qualification</b></p>
+        <p>Ph.D., Electrical Engineering  
+           <br>Indian Institute of Technology Bombay, India</p>
+
+        <p><b>Research Areas</b></p>
+        <p class="ref-research">
+          Cyber Physical Systems, Data Science and Cyber Security in Smart Grids, Applied Machine Learning.
+        </p>
+
+        <p><b>Contact Information</b></p>
+        <ul class="ref-contact">
+          <li><i class="bi bi-envelope"></i> kedark@iitdh.ac.in</li>
+          <li><i class="bi bi-telephone"></i> Office: +91-836-2212-xxx</li>
+          <li><i class="bi bi-geo-alt"></i>
+            Department of Computer Science & Engineering, IIT Dharwad<br>
+            WALMI Campus, Near High Court<br>
+            PB Road, Anjaneya Nagar, Karnataka – 580011
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+        
+    </section><!-- /Portfolio Section -->
+  <hr>
+
+ <section id="Achievements" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Achievements</h2>
+        <p><ol>
+    <li>Served as a Volunteer in the 2nd/3rd IEEE Conference on Engineering Informatics 2024/25 (ICEI 2024/25) conducted at Indian Institute Of Technology Dharwad, Karnataka.</li><hr>
+    <li>Qualified GATE Computer Science 2024 with 95.64 \%tile.</li><hr>
+    <li>Attended Advanced Level Robotics Project at S.P ROBOTICS MAKER LAB.</li><hr>
+    <li>Attended Drone Manufacturing \& Flying Workshop at DRONE-IT Training Institute.</li><hr>
+  </ol></p>
+      </div><!-- End Section Title -->
+
+
+        </div>
+
+      </div>      
+
+    </section><!-- /Services Section -->
+
+   <hr>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Abhishek Sharma</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        <h5><b>Contact Details: (Email: abhishek.omkrs@gmail.com)<br></h3>
+  
+     <br>
+                                            
+
+  </ul>
+
+        
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
